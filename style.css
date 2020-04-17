@@ -1,0 +1,122 @@
+.header {
+	background-image: url("images/background.jpg");
+    height: 714px; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+.title {
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: 
+}
+
+.links {
+	font-size: 12px;
+	display: flex;
+	justify-content: space-around;
+	width: 400px;
+	padding: 0;
+	list-style: none;
+	text-transform: uppercase;
+}
+
+.link {
+	text-decoration: none;
+	color: #000000;
+}
+
+.header-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header-name {
+	margin: 150px 0 0 0;
+}
+
+.subtitle {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.zero-margin {
+	margin: 0px;
+}
+
+.subtitle-small {
+	font-size: 12;
+}
+
+.about {
+	display: flex;
+    margin: 10px 0 0 0;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.button {
+	color: #fff;
+	border: 2px solid #fff; 
+	font-size: 12px; 
+	text-align: center;
+	border-radius: 20px;
+	padding: 16px 43px 16px 42px; 
+	background: transparent;
+	text-transform: uppercase;
+}
+
+.portfolio-image {
+	width: 308px; height: 340px;
+}
+
+.subtitle-small {
+	font-size: 12px;
+	text-transform: lowercase;
+}
+
+.about-me-container {
+	display: flex;
+	max-width: 800px;
+}
+
+.download-CV {
+	color: #000000;
+	font-weight: bold;
+}
+
+.works-background {
+    background-color: #d1bac8;
+    margin-top: 57px;
+}
+
+.works {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-top: 57px;
+	padding-bottom: 44px;
+}
+
+.latest-projects {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style: none;
+	text-align: center;
+}
+
+.pictures {
+	height=231px;
+	width=366px;
+	padding-left: 10px;
+	padding-right: 10px;
+	margin-bottom: 65px;
+}
