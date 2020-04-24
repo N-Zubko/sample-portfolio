@@ -316,7 +316,7 @@
 
 .input {
   border: none;
-  border-bottom: 5px solid #000000;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.6);
   height: 26px;
   text-transform: uppercase;
   width: 361px;
@@ -325,7 +325,7 @@
 
 .input_message {
   border: none;
-  border-bottom: 5px solid #000000;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.6);
   text-transform: uppercase;
   width: 361px;
   height: 160px;
