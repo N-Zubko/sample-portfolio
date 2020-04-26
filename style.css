@@ -1,0 +1,344 @@
+@font-face{
+  src: url('fonts/Poppins-Regular.ttf');
+  font-family: 'Poppins';
+  font-weight: 400;
+ }
+
+ @font-face{
+  src: url('fonts/Poppins-Light.ttf');
+  font-family: 'Poppins';
+  font-weight: 300;
+ }
+
+ @font-face{
+  src: url('fonts/Poppins-SemiBold.ttf');
+  font-family: 'Poppins';
+  font-weight: 600;
+ }
+
+ @font-face{
+  src: url('fonts/Poppins-Bold.ttf');
+  font-family: 'Poppins';
+  font-weight: 700;
+ }
+
+.container {
+   max-width: 1199px; 
+   margin: 0 auto;
+   font-family: 'Poppins', sans_serif;
+   position: relative;
+}
+
+ .header {
+  background-image: url("images/background.jpg");
+  height: 714px; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  font-family: 'Poppins';
+  
+}
+
+.title {
+	font-size: 20px;
+	text-transform: uppercase;
+  position: absolute;
+	font-size: 20px;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: 4.78px;
+  text-align: left;
+  color: #000000;
+  left: 35px;
+
+}
+
+.links {
+  position: absolute;
+  right: 41px;
+	font-size: 12px;
+	display: flex;
+	justify-content: space-between;
+	font-weight: 600;
+  line-height: 2.79;
+  letter-spacing: 2.87px;
+  text-align: left;
+  width: 243px;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.link {
+	text-decoration: none;
+	color: #000000;
+}
+
+.header_container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header_name {
+	position: absolute;
+	top: 243px;
+	left: 35px;
+}
+
+.subtitle {
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 600;
+  line-height: 0.93;
+  letter-spacing: 2px;
+  text-align: left;
+  color: #000000;
+}
+
+.description {
+	width: 399px;
+  font-size: 12px;
+  line-height: 1.54;
+  letter-spacing: 0.48px;
+  text-align: left;
+  color: #000000;
+
+}
+.about {
+	display: flex;
+  margin: 10px 0 0 0;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.button {
+	font-size: 12px; 
+	text-align: center;
+	border-radius: 20px;
+	text-transform: uppercase;
+  font-weight: 600;
+  line-height: 2.79;
+  letter-spacing: 2.87px;
+  text-align: center;
+}
+
+.contact_me {
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+  color: ##ffffff;
+  width: 194px;
+  height: 42px;
+  margin-top: 59px;
+  margin-right: 14px;
+
+}
+
+.portfolio_image {
+	position: relative;
+	width: 308px; 
+	height: 340px;
+	margin-right: 55px;
+	margin-bottom: 54px;
+}
+
+.about_me_container {
+	display: flex;
+	max-width: 800px;
+}
+
+.about_small {
+ font-size: 12px;
+ font-weight: bold;
+ text-transform: lowercase;
+ line-height: 0.93;
+ letter-spacing: 0.48px;
+ text-align: left;
+ color: #000000;
+}
+
+.about_description {
+	font-size: 12px;
+	font-weight: 600;
+  line-height: 18.5px;
+  letter-spacing: 0.48px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.7);
+  margin-right: 55px;
+}
+
+.job {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.54;
+  letter-spacing: 0.48px;
+  text-align: left;
+  color: #000000;
+  margin: 0;
+  margin-top: 29px;
+}
+
+.years {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 18.5px;
+  letter-spacing: 0.48px;
+  text-align: left;
+  color: #000000;
+  margin-top: 9px;
+}
+
+.button_CV {
+  background-color: #000000;
+  background: solid;
+  border-radius: 20px;
+  width: 21px;
+  height: 21px;
+}
+
+
+.download_CV {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.54;
+  letter-spacing: 0.48px;
+  text-align: left;
+  color: #000000;
+}
+
+.works_background {
+  margin-top: 57px;
+  background-color: #d1bac8;
+  background-size: 1199px 449px;
+}
+
+.works {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding-top: 57px;
+	margin-bottom: 44px;
+}
+
+.projects_working_on {
+	font-size: 12px;
+  font-weight: 600;
+  line-height: 1.54;
+  letter-spacing: 0.48px;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.drop_me_line {
+	font-size: 12px;
+  font-weight: 600;
+  line-height: 1.54;
+  letter-spacing: 0.48px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 81px;
+  margin-top: 39px;
+}
+
+.latest_projects {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ list-style: none;
+ text-align: center;
+}
+
+.pictures {
+ height=231px;
+ width=366px;
+}
+
+.portfolio_item {
+ position: relative;
+ margin-right: 9px;
+ margin-left: 9px;
+ margin-bottom: 65px;
+}
+
+.portfolio_item:before {
+ position: absolute; 
+ content: ''; 
+ background: #fff; 
+ width: 100%;
+ height: 100%;
+ display: block; 
+ top: 0;
+ left: 0;
+ background: rgba(255, 255, 255, 0.5);
+}
+
+.portfolio_item_text {
+ position: absolute;
+ left: 39px;
+ bottom: 49px;
+ width: 100%; 
+ font-size: 20px;
+ font-weight: 600;
+ line-height: 1.18;
+ letter-spacing: 3px;
+ text-align: left;
+ text-transform: uppercase;
+ color: #000000;
+}
+
+.portfolio_link {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.54;
+  letter-spacing: 0.48px;
+  text-align: left;
+  text-transform: lowercase;
+  color: #000000;
+}
+
+.form {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  max-width: 766px;
+}
+
+.input_column_wrap {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 315px;
+}
+
+.input {
+  border: none;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+  height: 26px;
+  text-transform: uppercase;
+  width: 361px;
+  margin-bottom: 38px;
+}
+
+.input_message {
+  border: none;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  width: 361px;
+  height: 160px;
+  margin-left: 46px;
+}
+
+.send {
+  width: 212px;
+  height: 41px;
+  background-color: #000000;
+  color: #ffffff;
+  position: absolute;
+  left: 50%;
+  margin-top: 46px;
+}
+

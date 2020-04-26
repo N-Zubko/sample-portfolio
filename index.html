@@ -1,85 +1,125 @@
 <!doctype html>
-
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	
 
 </head>
 
 <body>
+	<div class="container">
+		<header class="header">
+			<div class="header-container">
+				<h1 class="title">Jane <br/> Foster<h1>
+					<nav>
+						<ul class="links">
+							<li><a class="link" href="">About</a>
+							</li>
+							<li><a class="link" href="">Works</a>
+							</li>
+							<li><a class="link" href="">Contact</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header_name">
+					<h2 class="subtitle">HELLO, I'M JANE FOSTER
+					</h2>
+					<p class="description">
+						I am a photographer and art director based in Paris currently having a great time working at personal portfolio. 
+						I also freelance for many companies on my spare time and help them create joyful digital experiences.
+					</p>
+					<button class="button contact_me">Contact me</button>
+					<button class="button contact_me">View works</button>
+				</div>
+			</header>
+			<main>
+				<section class="about">
+					<div>
+						<img src="images/about.jpg" srcset="images/about@2x.jpg 2x" class="portfolio_image">
+						<br/>
+						<span class="subtitle">Jane Foster, 
+							<span class="about_small">photographer</span>
+						</span>
+					</div>
+					<div>
+						<div class="about_me_container">
+							<div>
+								<h2 class="subtitle">About me</h2>
+								<div class="row">
+									<div class="column">									
+										<p class="about_description">I am a photographer and art director based in Paris currently having a great time working at personal portfolio. I also freelance for many companies on my spare time and help them create joyful digital experiences and unique visual identities.</p>
+									</div>
+									<div class="column">									
+										<p class="about_description">Wanna hire me for working on your company for full time or part time?</p>
+										<button class="button_CV"></button>
+										<a class="download_CV" href="">Download my CV</a>
+									</div>
+								</div>
+								<div>
+									<h2 class="subtitle">Work experience</h2>
+									<div class="row">
+										<div class="column">
+											<h3 class="job">Postent, <br/> event photographer assistant </h3>
+											<span class="years">2012-2013</span>
+											<h3 class="job">Photof, <br/> art director</h3>
+											<span class="years">2013-2017</span>
+										</div>
+										<div class="column">
+											<h3 class="job">Freelance photographer<br/>Self-employed</h3>
+											<span class="years">2017-2019</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="works_background">
+						<div class="works">
+							<h2 class="subtitle" style="text-align:center">My latest works</h2>
+							<span class="projects_working_on">Projects i've been working on.</span>
+						</div>
+						<div>
+							<ul class="latest_projects">
+								<li class="portfolio_item">
+									<img class="pictures" src="images/work1.jpg" srcset="images/work1@2x.jpg 2x">
+									<div class="portfolio_item_text">
+										<h3>Forest waterfall</h3>
+										<a class="portfolio_link">View the project</a>
+									</div>	
+								</li>
+								<li class="portfolio_item">
+									<img class="pictures" src="images/work2.jpg" srcset="images/work2@2x.jpg 2x">
+									<div class="portfolio_item_text">
+										<h3>New York night</h3>
+										<a class="portfolio_link">View the project</a>
+									</div>
+								</li>
+								<li class="portfolio_item">
+									<img class="pictures" src="images/work3.jpg" srcset="images/work3@2x.jpg 2x">
+									<div class="portfolio_item_text">
+										<h3>Girl portrait</h3>
+										<a class="portfolio_link">View the project</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section>
+						<div class="drop_me_line">Drop me a line to hire me for freelance projects.</div>
 
-	<header>
-		<h1>Jane Foster</h1>
-		<nav>
-			<ul>
-				<li>About</li>
-				<li>Works</li>
-				<li>Contact</li>
-			</ul>
-		</nav>
-		<h2>HELLO, I'M JANE FOSTER
-		</h2>
-		<p>
-			I am a photographer and art director based in Paris currently having a great time working at personal portfolio. 
-			I also freelance for many companies on my spare time and help them create joyful digital experiences.
-		</p>
-		<button>Contact me</button>
-		<button>View works</button>
-
-
-	</header>
-
-	<main>
-		<section>
-			<img src="images/about.jpg" width="250">
-			<span>Jane Foster, photographer</span>
-		</section>
-		<section>
-			<h2>About me</h2>
-			<p>I am a photographer and art director based in Paris currently having a great time working at personal portfolio. I also freelance for many companies on my spare time and help them create joyful digital experiences and unique visual identities.</p>
-			<p>Wanna hire me for working on your company for full time or part time?</p>
-			<a href="">Download my CV</a>
-		</section>
-		<section>
-			<h2>Work experience</h2>
-			<h3>Postent, event photographer assistant
-				Paris, France
-			</h3>
-			<span>2012-2013</span>
-			<h3>Photof, art director
-				Florence, Italy
-			</h3>
-			<span>2013-2017</span>
-			<h3>Freelance photographer
-				Self-employed
-			</h3>
-			<span>2017-2019</span>
-		</section>
-		<h2>My latest works</h2>
-		<span>Projects i've been working on.</span>
-		<ul>
-			<li>
-				<img src="images/work1.jpg" width="250">	
-			</li>
-			<li>
-				<img src="images/work2.jpg" width="250">
-				</li>
-			<li>
-				<img src="images/work3.jpg" width="250">
-			</li>
-		</ul>
-		<section>
-			<div>Drop me a line to hire me for freelance projects.</div>
-			<form>
-				<input type="text" placeholder="Name">
-				<input type="text" placeholder="Email">
-				<input type="text" placeholder="Subject">
-				<textarea placeholder="Message"></textarea>
-				<button>Send message</button>
-			</form>
-		</section>
-
-
-	</main>
-
-</body>
-</html>
+						<form class="form">
+							<div class="input_column_wrap">
+								<input type="text" placeholder="Name" class="input">
+								<input type="text" placeholder="Email" class="input">
+								<input type="text" placeholder="Subject" class="input">
+								<textarea placeholder="Message" class="input_message"></textarea>
+							</div>
+						</form>
+						<button class="button send">Send message</button>
+					</section>
+				</main>
+			</div>
+		</body>
+		</html>
