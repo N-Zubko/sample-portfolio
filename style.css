@@ -2,69 +2,71 @@
   src: url('fonts/Poppins-Regular.ttf');
   font-family: 'Poppins';
   font-weight: 400;
- }
+}
 
- @font-face{
+@font-face{
   src: url('fonts/Poppins-Light.ttf');
   font-family: 'Poppins';
   font-weight: 300;
- }
+}
 
- @font-face{
+@font-face{
   src: url('fonts/Poppins-SemiBold.ttf');
   font-family: 'Poppins';
   font-weight: 600;
- }
+}
 
- @font-face{
+@font-face{
   src: url('fonts/Poppins-Bold.ttf');
   font-family: 'Poppins';
   font-weight: 700;
- }
-
-.container {
-   max-width: 1199px; 
-   margin: 0 auto;
-   font-family: 'Poppins', sans_serif;
-   position: relative;
 }
 
- .header {
+.container {
+ max-width: 1199px; 
+ margin: 0 auto;
+ font-family: 'Poppins', sans_serif;
+}
+
+.header {
   background-image: url("images/background.jpg");
   height: 714px; 
   background-repeat: no-repeat; 
   background-size: cover;
   font-family: 'Poppins';
-  
+  position: relative;
+  margin: 0 auto;
+  top: -13px;
 }
 
 .title {
 	font-size: 20px;
 	text-transform: uppercase;
-  position: absolute;
-	font-size: 20px;
+  position: relative;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.18;
   letter-spacing: 4.78px;
   text-align: left;
   color: #000000;
-  left: 35px;
-
+  left: 36px;
+  top: 12px;
 }
 
 .links {
   position: absolute;
-  right: 41px;
-	font-size: 12px;
-	display: flex;
-	justify-content: space-between;
-	font-weight: 600;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
   line-height: 2.79;
   letter-spacing: 2.87px;
   text-align: left;
-  width: 243px;
   list-style: none;
   text-transform: uppercase;
+  top: 18px;
+  width: 257px;
+  left: 866px;
 }
 
 .link {
@@ -79,18 +81,29 @@
 
 .header_name {
 	position: absolute;
-	top: 243px;
-	left: 35px;
+  top: 243px;
+  left: 34px;
 }
 
 .subtitle {
-	font-size: 20px;
-	text-transform: uppercase;
-	font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
   line-height: 0.93;
   letter-spacing: 2px;
   text-align: left;
   color: #000000;
+}
+
+.hello {
+  position: relative;
+  top: -17px;
+}
+
+.Jane {
+  position: relative;
+  top: -15px;
+  left: 2px;
 }
 
 .description {
@@ -100,11 +113,14 @@
   letter-spacing: 0.48px;
   text-align: left;
   color: #000000;
+  margin-top: -3px;
+  margin-left: -1px;
 
 }
 .about {
 	display: flex;
-  margin: 10px 0 0 0;
+  margin-top: 28px;
+  margin-left: 35px;
 }
 
 .row {
@@ -124,26 +140,39 @@
   line-height: 2.79;
   letter-spacing: 2.87px;
   text-align: center;
+  cursor: pointer;
 }
 
 .contact_me {
+  position: relative;
+  left: -2px;
   color: #fff;
   background: transparent;
   border: 2px solid #fff;
-  color: ##ffffff;
   width: 194px;
   height: 42px;
-  margin-top: 59px;
-  margin-right: 14px;
+  margin-top: 50px;
+  margin-right: 13px;
+  transition: all 1s ease;
+}
 
+.contact_me:hover {
+  background: white;
+  color: #6a4a4c;
+}
+
+.contact_me:active {
+  background: white;
+  color: #6a4a4c;
+  letter-spacing: 6px;
 }
 
 .portfolio_image {
 	position: relative;
 	width: 308px; 
 	height: 340px;
-	margin-right: 55px;
-	margin-bottom: 54px;
+	margin-right: 56px;
+  margin-bottom: 66px;
 }
 
 .about_me_container {
@@ -162,13 +191,20 @@
 }
 
 .about_description {
-	font-size: 12px;
-	font-weight: 600;
+  font-size: 12px;
+  font-weight: 600;
   line-height: 18.5px;
   letter-spacing: 0.48px;
   text-align: left;
   color: rgba(0, 0, 0, 0.7);
-  margin-right: 55px;
+  margin-top: -8px;
+  margin-bottom: 25px;
+  padding-right: 56px;
+}
+
+.wanna {
+  position: relative;
+  left: 22px;
 }
 
 .job {
@@ -178,8 +214,8 @@
   letter-spacing: 0.48px;
   text-align: left;
   color: #000000;
-  margin: 0;
   margin-top: 29px;
+  margin-bottom: -32px;
 }
 
 .years {
@@ -189,17 +225,22 @@
   letter-spacing: 0.48px;
   text-align: left;
   color: #000000;
-  margin-top: 9px;
 }
 
-.button_CV {
+.spot_CV {
   background-color: #000000;
   background: solid;
   border-radius: 20px;
   width: 21px;
   height: 21px;
+  cursor: pointer;
+  position: relative;
+  left: 24px;
 }
 
+.spot_CV:active {
+  background-color: #404040;
+}
 
 .download_CV {
   font-size: 14px;
@@ -208,10 +249,34 @@
   letter-spacing: 0.48px;
   text-align: left;
   color: #000000;
+  position: relative;
+  left: 33px;
+}
+
+.latest {
+  position: relative;
+  top: -19px;
+  left: 4px;
+}
+
+.about_subtitle {
+  margin-bottom: 16px;
+  position: relative;
+  top: -14px;
+}
+
+.work_exp {
+  position: relative;
+  top: 43px;
+}
+
+.column3 {
+  position: relative;
+  top: 55px;
 }
 
 .works_background {
-  margin-top: 57px;
+  margin-top: 41px;
   background-color: #d1bac8;
   background-size: 1199px 449px;
 }
@@ -224,6 +289,29 @@
 	margin-bottom: 44px;
 }
 
+.Postent {
+  position: relative;
+  top: -33px;
+}
+
+.freelance {
+  position: relative;
+  top: 21px;
+  left: 24px;
+}
+
+.Photof {
+  position: relative;
+  top: -6px;
+  margin-bottom: -3px;
+}
+
+.freelance_years {
+  position: relative;
+  top: 56px;
+  left: 25px;
+}
+
 .projects_working_on {
 	font-size: 12px;
   font-weight: 600;
@@ -231,6 +319,8 @@
   letter-spacing: 0.48px;
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
+  margin-top: -22px;
+  margin-left: 6px;
 }
 
 .drop_me_line {
@@ -240,8 +330,8 @@
   letter-spacing: 0.48px;
   text-align: center;
   color: rgba(0, 0, 0, 0.6);
-  margin-bottom: 81px;
-  margin-top: 39px;
+  margin-bottom: 70px;
+  margin-top: 38px;
 }
 
 .latest_projects {
@@ -250,6 +340,8 @@
  justify-content: center;
  list-style: none;
  text-align: center;
+ position: relative;
+ left: -15px;
 }
 
 .pictures {
@@ -262,32 +354,46 @@
  margin-right: 9px;
  margin-left: 9px;
  margin-bottom: 65px;
+ height: 234px;
 }
 
-.portfolio_item:before {
+.portfolio_item:hover .portfolio_item_text {
+  opacity: 1;
+}
+
+.portfolio_item:hover::before {
+  opacity: 1;  
+}
+
+.portfolio_item::before {
  position: absolute; 
  content: ''; 
  background: #fff; 
  width: 100%;
  height: 100%;
- display: block; 
+ opacity: 0;
  top: 0;
  left: 0;
  background: rgba(255, 255, 255, 0.5);
+ transition: all 2s;
+ cursor: pointer;
 }
 
 .portfolio_item_text {
- position: absolute;
- left: 39px;
- bottom: 49px;
- width: 100%; 
- font-size: 20px;
- font-weight: 600;
- line-height: 1.18;
- letter-spacing: 3px;
- text-align: left;
- text-transform: uppercase;
- color: #000000;
+  position: absolute;
+  left: 36px;
+  bottom: -2px;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 3px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0;
+  transition: all 2s;
+  cursor: pointer;
 }
 
 .portfolio_link {
@@ -296,8 +402,10 @@
   line-height: 1.54;
   letter-spacing: 0.48px;
   text-align: left;
-  text-transform: lowercase;
+  text-transform: none;
   color: #000000;
+  position: relative;
+  top: -15px;
 }
 
 .form {
@@ -305,6 +413,9 @@
   position: relative;
   margin: 0 auto;
   max-width: 766px;
+  left: 17px;
+  top: 4px;
+
 }
 
 .input_column_wrap {
@@ -314,22 +425,52 @@
   max-height: 315px;
 }
 
-.input {
+.input, .input_message {
   border: none;
-  border-bottom: 5px solid rgba(0, 0, 0, 0.6);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
   height: 26px;
   text-transform: uppercase;
   width: 361px;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  letter-spacing: 2.16px;
+  font-weight: 600;
 }
 
 .input_message {
-  border: none;
-  border-bottom: 5px solid rgba(0, 0, 0, 0.6);
-  text-transform: uppercase;
-  width: 361px;
   height: 160px;
   margin-left: 46px;
+}
+
+.input_message:placeholder {
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  letter-spacing: 2.16px;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 2.8;
+}
+
+.input_message {
+  width: 45%;
+  height: 147px;
+}
+
+.input:focus {
+  outline: none;
+}
+.input_message:focus {
+  outline: none;
+}
+
+@keyframes animationSendButton{
+  from, to{
+    transform: translate(0, 0) scale(1, 1);      
+  }
+
+  50% {
+    transform: translate(0, 15px) scale(0.5, 0.5);
+  }
 }
 
 .send {
@@ -338,7 +479,20 @@
   background-color: #000000;
   color: #ffffff;
   position: absolute;
-  left: 50%;
-  margin-top: 46px;
+  left: 43%;
+  margin-top: 34px;
+  margin-bottom: 100px;
 }
+
+.send:hover {
+  background: white;
+  color: #000000;
+}
+
+.send:active {
+  background: white;
+  color: #000000;
+  animation: animationSendButton 0.5s 1 ease;
+}
+
 
