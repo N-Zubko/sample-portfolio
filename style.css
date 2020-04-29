@@ -143,6 +143,10 @@
   cursor: pointer;
 }
 
+.button:focus {
+  outline: none;
+}
+
 .contact_me {
   position: relative;
   left: -2px;
