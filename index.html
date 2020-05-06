@@ -108,15 +108,16 @@
 					<section>
 						<div class="drop_me_line">Drop me a line to hire me for freelance projects.</div>
 
-						<form class="form">
+						<form class="form" id="form">
 							<div class="input_column_wrap">
-								<input type="text" placeholder="Name" class="input">
-								<input type="text" placeholder="Email" class="input">
-								<input type="text" placeholder="Subject" class="input">
-								<textarea placeholder="Message" class="input_message"></textarea>
+								<input type="text" placeholder="Name" class="input" id="name">
+								<input type="text" placeholder="Email" class="input" id="email">
+								<input type="text" placeholder="Subject" class="input" id="subject">
+								<textarea placeholder="Message" class="input_message" id="message"></textarea>
+							<button class="button send">Send message</button>
 							</div>
+							<p class="alert" id="alert"></p>
 						</form>
-						<button class="button send">Send message</button>
 					</section>
 				</main>
 			</div>
