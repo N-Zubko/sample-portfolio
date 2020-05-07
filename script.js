@@ -1,6 +1,6 @@
 
 var form = document.getElementById("form");
-var i = 0;
+let booleanValue = false;
 
 function getValue() {
 	var someId = document.getElementById();
@@ -15,13 +15,17 @@ function turnGrey(someId) {
 }
 
 function compareValue(someId) {
+
 	myValue = someId && someId.value;
 
 	if (myValue === ''){
  		turnRed(someId);
+        return false;
+        
  	} else {
- 		turnGrey(someId);
- 		i++;
+        turnGrey(someId);
+        booleanValue = true;
+ 		return true;
  	}
 }
 
@@ -41,14 +45,15 @@ function validate(event) {
  	var myMessage = document.getElementById("message");
  	compareValue(myMessage);
 
- 	if(i === 4) {
-        msg = "Message sent";
-    } else {
+    let isCorrect = true;
+
+ 	if (isCorrect === compareValue(myName) && compareValue(myEmail) && compareValue(mySubject) && compareValue(myMessage)) {
+       msg = "Message sent";
+     } else {
         msg = "Message not sent";
-    }
-    document.getElementById("alert").innerHTML = msg;
+     }
+     document.getElementById("alert").innerHTML = msg;
 
 }
-
 
  form.addEventListener('submit', validate);
