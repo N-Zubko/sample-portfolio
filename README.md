@@ -4,5 +4,5 @@
 
 can be viewed at https://n-zubko.github.io/sample-portfolio/
 
-This is a project based on a tutorials by Elena Semyonova 
+This is a project based on a tutorial by Elena Semyonova 
 My very first experience of creating a page using HTML, CSS and a bit of JS
